@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+<link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="content">
+                .
+             <div class="logo"><a href="https://www.centennialcollege.ca/"> <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Centennial_College_Logo.jpg" alt="Centennial college logo"></a></div>
+         <div class="header">
+              
+              <marquee  direction="left" loop="infinite" class="title" height="50">Continuing Education Course/Instructor Evaluation</marquee>
+         </div>
+     <div>Please read each statement carefully and consider each one individually. Use the <span class="highlight">computer card</span> to make your choice. Give only <span class="highlight">one answer</span> for each question.</div>
+     <br>
+     <form action="backend.php">
+        <label for="name"> <span class="highlight">Course Name/ Code: </span></label><input type="text" placeholder="Enter Course name" id="name">
+        <br><br>
+        <label for="semester"><span class="highlight">Semester: </span></label> <input type="radio" id="semester" name="semester">Fall <input type="radio"  name="semester">Winter <input type="radio"  name="semester">Spring/Summer            
+         <label for="year"><Strong class="year">Year: </Strong></label><input type="number" min="2000" max="2030" id="year">
+     <br><br>
+     <label for="instructor"> <span class="highlight">Instructor: </Span></label> <input type="text" id="instructor" placeholder="Enter instructor's name">
+     <br><br>
+     <h2>INSTRUCTOR</h2>
+     <div>How would you rate the instructor: <br>
+     <span class="highlight">1. Knowledge</span> of subject? 
+     <br>
+     <input type="radio"  name="knowledge"> Excellent       
+     <input type="radio"  name="knowledge"> Good 
+     <input type="radio"  name="knowledge"> Fair 
+     <input type="radio"  name="knowledge"> Not Satisfactory    
+<br><br>
+ <span class="highlight">2. Helpfullness?</span>   <br>
+ <input type="radio"  name="helpfullness"> Excellent       
+ <input type="radio"  name="helpfullness"> Good 
+ <input type="radio"  name="helpfullness"> Fair 
+ <input type="radio"  name="helpfullness"> Not Satisfactory    
+<br><br>
+ <span class="highlight">3. Courtesy and Respect</span> for all students?   
+ <br>
+<input type="radio"  name="respect"> Excellent       
+<input type="radio"  name="respect"> Good 
+<input type="radio"  name="respect"> Fair 
+<input type="radio"  name="respect"> Not Satisfactory    
+<br><br>
+ <span class="highlight">4. Communication Skills?</span>   
+ <br>
+<input type="radio"  name="skills"> Excellent       
+<input type="radio"  name="skills"> Good 
+<input type="radio"  name="skills"> Fair 
+<input type="radio"  name="skills"> Not Satisfactory    
+<br><br>
+ <span class="highlight">5. Overall</span> Performance?   
+ <br>
+<input type="radio"  name="overall"> Excellent       
+<input type="radio"  name="overall"> Good 
+<input type="radio"  name="overall"> Fair 
+<input type="radio"  name="overall"> Not Satisfactory    
+<br><br>
+<h2>COURSE</h2>
+<b>6</b> How would you rate the<span class="highlight"> course materials?</span>    
+ <br>
+<input type="radio"  name="rating"> Excellent       
+<input type="radio"  name="rating"> Good 
+<input type="radio"  name="rating"> Fair 
+<input type="radio"  name="rating"> Not Satisfactory    
+<br><br>
+<b>7</b> How much did this course meet your <span class="highlight">expectations?</span>    
+ <br>
+<input type="radio"  name="expectations"> Excellent       
+<input type="radio"  name="expectations"> Good 
+<input type="radio"  name="expectations"> Fair 
+<input type="radio"  name="expectations"> Not Satisfactory    
+<br><br>
+<b>8</b> How would you rate this course <span class="highlight">(overall)?</span>    
+ <br>
+<input type="radio"  name="course-rating"> Excellent       
+<input type="radio"  name="course-rating"> Good 
+<input type="radio"  name="course-rating"> Fair 
+<input type="radio"  name="course-rating"> Not Satisfactory    
+<br><br>
+<h2>GENERAL INFORMATION</h2>
+<b>9</b> Was the <span class="highlight">course outline</span> reviewed/explained at the beginning of your course?    
+ <br>
+<input type="radio" name="course-outline"> Yes       
+<input type="radio" name="course-outline"> No 
+<input type="radio" name="course-outline"> Not Sure   
+<br><br>
+<b>10</b> Would you <span class="highlight">recommend</span> this course to a friend with same interest?    
+ <br>
+<input type="radio"  name="recommendation"> Yes       
+<input type="radio"  name="recommendation"> No 
+<input type="radio"  name="recommendation"> Not Sure   
+<br><br>
+<h2>ANY OTHER COMMENTS!</h2>
+<b>11</b> What is the<span class="highlight"> best thing</span> about this course?    <br>  
+ <textarea name="user_response" id="user_response" cols="40" rows="3" placeholder="Leave your valuable cooments here!"></textarea>
+<br><br>
+<b>12</b> How could we<span class="highlight"> improve</span> this course?    <br>  
+ <textarea name="user_response"  cols="40" rows="3" placeholder="Leave your valuable cooments here!"></textarea>
+<br><br>
+<b>13</b> Other:
+  <br>  
+ <textarea name="user_response" cols ="40" rows="4" placeholder="Leave your valuable cooments here!"></textarea>
+<br><br>
+     </div>
+<div class="footer">
+    <p class="thanks">Thank you! We pay attention to your feedback!</p>
+    Web: <a href="https://www.centennialcollege.ca/continuingeducation">www.centennialcollege.ca/continuing.education</a>  <span class="email"> Email:</span> <a href="mailto:Continuingeducation@centennialcollege.ca">continuingeducation@centennialcollege.ca</a>
+</div>        
+</form>
+</div>
+</body>
+</html>
